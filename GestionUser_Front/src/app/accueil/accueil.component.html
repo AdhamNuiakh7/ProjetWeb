@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Service Exchanges</title>
+	
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		
+	
+	<div class="container">
+		<div class="navbar">
+	<div class="logo">
+    <img src="./assets/logo.png" width="125px">
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a [routerLink]="['/acceuil']">Home</a></li>
+			<li><a [routerLink]="['/home']">Ouvriers</a></li>
+		
+			<li><a href="#">About</a></li>
+				
+		</ul>
+	</nav>
+  <img src="./assets/menu.png" class="menu-icon" onclick="menutoggle()">
+	
+</div>
+<div class="row">
+	<div class="col-2">
+		<h1>Gérer Vos Ouvriers
+      <br> D'une Seul Clique !</h1>
+		<p> Vous avez besoins de gérer vos ouvriers ? N'hésitez pas de cliquer pour comencer votre gestion .</p> 
+		<a [routerLink]="['/home']" class="btn">Explorez maintenant &#8594;</a>
+       
+	</div>
+	<div class="col-2">
+    <img src="./assets/107.png">
+	</div>
+</div>
+</div>
+</div>
+ 
+ <!------- featured categories -------------> 
+ <div class="categories">
+ 	<div class="small-container">
+ 		<div class="row">
+ 	 	<div class="col-3">
+      <img src="./assets/6.jpg">
+ 	 	</div>
+
+ 	 	<div class="col-3">
+      <img src="./assets/2.jpg">
+ 	 	</div>
+
+ 	 	<div class="col-3">
+ 	 	<img src="./assets/3.jpg">
+ 	 	</div>
+
+ 	 </div>
+ 	</div> 	
+ </div>
+  <!------- Old Members -------------> 
+  
+  	
+ 
+  <!------- Old Team -------------> 
+
+    <h2 class="title">Our Member</h2>	
+    <div class="row">
+      <div class="col-4" *ngFor="let client of clients.slice(0, 4) ">
+              <a href="">    <img src="{{client.imageUrl}}" style="height: 220px;"></a>
+        <h4>{{client.name}}</h4>
+        <div class="rating">
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$100.00</p>
+      </div>
+
+     
+    </div>
+  
+
+  <!-------- offer ----->
+
+  <div class="offer">
+   <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <img src="./assets/106.png" class="offer-img">
+      </div>
+      <div class="col-2">
+        <p>Exclusively Available on SExchanges</p>
+        <h1>Small band </h1>
+        <small>  maintenant vous pouvez avoir l'opportunnité de poser votre proffesion pour tous le maro d'une faaçon Codifié et ne payer qu'aprés votre cinq premier services<br>
+        </small>
+        <a href="" class="btn">On y va !</a>
+        
+      </div>
+    </div>
+   </div>    
+  </div>
+
+
+  
+
+   <!---------- testimonial ---------->
+   <div class="testimonial">
+   	<div class="small-container">
+   		<div class="row">
+   			<div class="col-3">
+   				<i class="fa fa-quote-left"></i>
+   				<p>J'ai testé SeviceExchange , il ya beacoup des ouvriers dans n'importe quelle domaine ainsi la rapidité d'avoir le service
+   				</p>
+   				<div class="rating">
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star-o"></i>
+  			</div>
+  			<img src="https://media.licdn.com/dms/image/C4D03AQHM3GJosIwSGA/profile-displayphoto-shrink_200_200/0/1639040598890?e=2147483647&v=beta&t=wblPkXRpkH7Q0GlbA5iSUUPgGEylYChEE0dH_DfvZFU">
+  			<h3>Nuiakh Adham</h3>
+   			</div>
+
+        
+
+   			<div class="col-3">
+   				<i class="fa fa-quote-left"></i>
+   				<p>J'ai testé SeviceExchange , il ya beacoup des ouvriers dans n'importe quelle domaine ainsi la rapidité d'avoir le service
+   				</p>
+   				<div class="rating">
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star" ></i>
+  				<i class="fa fa-star-o"></i>
+  			</div>
+  			<img src="https://media.licdn.com/dms/image/D4E03AQEg8UBaBYXwFg/profile-displayphoto-shrink_800_800/0/1695568054953?e=2147483647&v=beta&t=w56ygsH-ouqm2jirA2HK7HEw-gF6zTMz_TXakTjf6EQ">
+  			<h3>Nawfel Boudib</h3>
+   			</div>
+
+   		</div>
+   	</div>
+   </div>
+
+   <!---------- brands ---------->
+  <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="./assets/logo-godrej.png">
+        </div>
+
+        <div class="col-5">
+          <img src="./assets/logo-oppo.png">
+        </div>
+
+        <div class="col-5">
+          <img src="./assets/logo-coca-cola.png">
+        </div>
+
+        <div class="col-5">
+          <img src="./assets/logo-paypal.png">
+        </div>
+
+        <div class="col-5">
+          <img src="./assets/logo-philips.png">
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!---------- footer ---------->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>
+            Download App for Android and ios mobile phone
+          </p>
+          <div class="app-logo">
+            <img src="./assets/play-store.png">
+            <img src="./assets/app-store.png">
+          </div>   
+        </div>
+
+        <div class="footer-col-2">
+          <img src="./assets/logo-white.png">
+          <p>
+            Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+          </p>   
+        </div>
+
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+
+          </ul>   
+        </div>
+        
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twiter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2024 - Ece Paris </p>
+  </div>
+</div>
+
+<!--------- js for toggle menu --------->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+
+</script>
+
+
